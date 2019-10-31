@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Gallery = props => {
-
-    console.log(props.images)
-    return <h4>Hi there!</h4>
+ const images = props.images.map(({description,id,urls}) =>{
+ return <img alt ={description} keys={id} src={urls.regular }/>
+})
+    
+    return <div>{images}</div>
 }
 
 export default Gallery;
