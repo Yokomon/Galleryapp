@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import "./SearchBar.css";
 
 class SearchBar extends React.Component{
     state = {searchTerm: ''};

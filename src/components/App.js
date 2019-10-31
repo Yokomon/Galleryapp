@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from "./SearchBar"
-import "./SearchBar.css";
+
 
 class App extends React.Component{
     onSearchSubmit(searchTerm){
