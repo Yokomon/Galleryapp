@@ -2,10 +2,16 @@ import React from 'react';
 import SearchBar from "./SearchBar"
 import "./SearchBar.css";
 
-const App = () => {
+class App extends React.Component{
+    onSearchSubmit(searchTerm){
+        console.log(searchTerm);
+    }
+
+    render(){
     return (<div className="ui container" id="formDetails">
-        <SearchBar />
+        <SearchBar onSubmit={this.onSearchSubmit}/>
         </div>)
+    }
 }
 
 export default App;
