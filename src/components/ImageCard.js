@@ -7,7 +7,8 @@ class ImageCard extends React.Component{
             <div>
                 <img
                  src={urls.regular} 
-                alt={description} />
+                alt={description} 
+                />
             </div>
         )
     }
